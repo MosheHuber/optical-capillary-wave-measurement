@@ -1,0 +1,34 @@
+# 1. Create the environment (with Python 3.10)
+conda create -n "Capillary Waves" python=3.10
+
+# 2. Activate the environment
+conda activate "Capillary Waves"
+
+# 3. Install JupyterLab and ipykernel
+conda install -c conda-forge jupyterlab ipykernel
+
+# 4. (Optional) Register the kernel for Jupyter
+python -m ipykernel install --user --name "CapillaryWaves" --display-name "Python (CapillaryWaves)"
+
+#5 Install dependencies 
+pip install numpy
+pip install pandas 
+pip install matplotlib
+
+# 5. Run JupyterLab
+jupyter lab
+
+
+In JupyterLab
+Open your notebook - Capillary_Waves_Camera_FOV_and_Dispersion.ipynb
+Click the current kernel name (e.g., "Python 3 (ipykernel)") in the top right corner.
+Select Python (CapillaryWaves) from the dropdown menu.
+Alternatively, if you are on the Launcher page, you will see a new icon for "Python (CapillaryWaves)" under the Notebook section.
+
+Run Online : 
+Binder: Go to mybinder.org and paste the URL of the GitHub repository. It will build a temporary environment and launch JupyterLab for you.
+
+Run Locally
+git clone 
+conda activate "Capillary Waves"
+jupyter lab
