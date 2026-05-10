@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Binder environment ready."
+
+python -m ipykernel install --user --name capillary-wave
